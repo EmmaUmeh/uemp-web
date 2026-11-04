@@ -27,7 +27,7 @@ interface ErrorBody {
 }
 
 const client = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/v1',
+  baseURL: import.meta.env.VITE_API_BASE_URL,
   timeout: 15000,
   headers: { 'Content-Type': 'application/json' },
   withCredentials: true,
